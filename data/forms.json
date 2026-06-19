@@ -1,0 +1,54 @@
+[
+  {
+    "id": "form1",
+    "name": "CORP | Rangeline 21PL Brochure Request | TT | Form | E3",
+    "folder_category": "Model Brochures",
+    "product_category": "TT",
+    "hubspot_url": null,
+    "connected_workflows": ["CORP | Brochure Download Product Labeling | General | WF | E3", "CORP | Lead Nurture Plinko | General | WF | E3", "CORP | Send Leads to Aimbase | General | WF | E3"],
+    "hidden_fields": ["Interested Product Model: Rangeline 21PL", "Interested Product Category: TT"],
+    "notes": "Added June 2026 for Rangeline 21PL launch.",
+    "last_verified_date": "2026-06-01",
+    "created_at": "2026-06-01T00:00:00Z",
+    "updated_at": "2026-06-01T00:00:00Z"
+  },
+  {
+    "id": "form2",
+    "name": "CORP | Rangeline 21PS Brochure Request | TT | Form | E3",
+    "folder_category": "Model Brochures",
+    "product_category": "TT",
+    "hubspot_url": null,
+    "connected_workflows": ["CORP | Brochure Download Product Labeling | General | WF | E3", "CORP | Lead Nurture Plinko | General | WF | E3", "CORP | Send Leads to Aimbase | General | WF | E3"],
+    "hidden_fields": ["Interested Product Model: Rangeline 21PS", "Interested Product Category: TT"],
+    "notes": "Referrer slug updated from 'rangeline' to 'rangeline-21ps' in June 2026.",
+    "last_verified_date": "2026-06-01",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2026-06-01T00:00:00Z"
+  },
+  {
+    "id": "form3",
+    "name": "CORP | Airstream Lifestyle Guide | General | Form | E3",
+    "folder_category": "Guides",
+    "product_category": "General",
+    "hubspot_url": null,
+    "connected_workflows": ["CORP | Lead Nurture Plinko | General | WF | E3"],
+    "hidden_fields": ["Interested Product Category: General"],
+    "notes": "Routes into Experience Match stage in Plinko.",
+    "last_verified_date": "2026-03-01",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2026-03-01T00:00:00Z"
+  },
+  {
+    "id": "form4",
+    "name": "Promo | YEP TC Incentive | TC | Form | E3",
+    "folder_category": "Other",
+    "product_category": "TC",
+    "hubspot_url": null,
+    "connected_workflows": ["CORP | Send Leads to Aimbase | General | WF | E3", "CORP | Lead Nurture Plinko | General | WF | E3"],
+    "hidden_fields": ["Interested Product Category: TC", "Campaign: YEP"],
+    "notes": "Year End Promotion TC incentive form. Routes into Try & Buy stage.",
+    "last_verified_date": "2025-12-01",
+    "created_at": "2025-10-01T00:00:00Z",
+    "updated_at": "2025-12-01T00:00:00Z"
+  }
+]

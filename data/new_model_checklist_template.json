@@ -1,0 +1,74 @@
+[
+  {
+    "id": "nm1",
+    "section": "HubSpot Properties",
+    "sort_order": 1,
+    "item_description": "Add new model name to Primary Interested Product Model dropdown property in HubSpot",
+    "workflow_reference": null,
+    "danger_note": null,
+    "notes": "Use the HubSpot property dropdown as the authoritative source for model names — do not use web-sourced names. Exact spelling and formatting matters for downstream workflow branch matching."
+  },
+  {
+    "id": "nm2",
+    "section": "HubSpot Properties",
+    "sort_order": 2,
+    "item_description": "Add new model to Product Models of Interest (multi-select append property)",
+    "workflow_reference": null,
+    "danger_note": null,
+    "notes": null
+  },
+  {
+    "id": "nm3",
+    "section": "Workflow: Configurator Product Labeling",
+    "sort_order": 3,
+    "item_description": "Add new model branch to CORP | Configurator Product Labeling | General | WF | E3",
+    "workflow_reference": "CORP | Configurator Product Labeling | General | WF | E3",
+    "danger_note": null,
+    "notes": "Branch uses 'model contains [number]' logic. Include all double-digit variants to avoid false matches. Clone steps from an existing model branch."
+  },
+  {
+    "id": "nm4",
+    "section": "Workflow: Brochure Download Product Labeling",
+    "sort_order": 4,
+    "item_description": "Add new model branch to CORP | Brochure Download Product Labeling | General | WF | E3. Set page referrer to model-specific URL slug (e.g. rangeline-21pl).",
+    "workflow_reference": "CORP | Brochure Download Product Labeling | General | WF | E3",
+    "danger_note": "Use a specific slug (e.g. 'rangeline-21pl'), not a broad term (e.g. 'rangeline') — broad slugs will match multiple models and mislabel contacts.",
+    "notes": "Also verify the existing sibling model's slug is specific, not broad. Updated Rangeline 21PS from 'rangeline' to 'rangeline-21ps' in June 2026."
+  },
+  {
+    "id": "nm5",
+    "section": "Workflow: Aimbase Lead Label + Webhook",
+    "sort_order": 5,
+    "item_description": "Add new model branch to CORP | Aimbase Lead Label + Webhook | General | WF | E3. Update branch name and product name property.",
+    "workflow_reference": "CORP | Aimbase Lead Label + Webhook | General | WF | E3",
+    "danger_note": null,
+    "notes": "Clone steps from an existing model branch, then update the product name to the new model. Do not reuse steps without updating — product name will be wrong."
+  },
+  {
+    "id": "nm6",
+    "section": "Meta / Paid",
+    "sort_order": 6,
+    "item_description": "Get new Meta lead form name(s) for this model from Allison/Bennett and update AMP | Meta Lead Form Routing | General | WF | E3",
+    "workflow_reference": "AMP | Meta Lead Form Routing | General | WF | E3",
+    "danger_note": null,
+    "notes": "Do not guess Meta form names — confirm exact names from Allison or Bennett."
+  },
+  {
+    "id": "nm7",
+    "section": "Lead Scoring",
+    "sort_order": 7,
+    "item_description": "Verify new model's brochure form is included in the Moderate Intent scoring group",
+    "workflow_reference": null,
+    "danger_note": null,
+    "notes": "Brochure downloads are a critical scoring signal (~50% last-touch). Do not skip this step."
+  },
+  {
+    "id": "nm8",
+    "section": "Documentation",
+    "sort_order": 8,
+    "item_description": "Update this SOP with any new workflows or property changes made during this model launch",
+    "workflow_reference": null,
+    "danger_note": null,
+    "notes": null
+  }
+]

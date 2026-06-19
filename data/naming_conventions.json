@@ -1,0 +1,57 @@
+[
+  {
+    "id": "nc1",
+    "initiative_type": "CORP",
+    "product_category": "General",
+    "asset_type": "WF",
+    "creator": "E3",
+    "example": "CORP | Brochure Download Product Labeling | General | WF | E3",
+    "notes": "Use CORP for Airstream-wide assets that apply across all models and products.",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "nc2",
+    "initiative_type": "CORP",
+    "product_category": "TC",
+    "asset_type": "EM",
+    "creator": "E3",
+    "example": "CORP | New Owner Welcome | TC | EM | E3",
+    "notes": "TC = Touring Coach only. TT = Travel Trailer only. Both = applies to TT and TC.",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "nc3",
+    "initiative_type": "AMP",
+    "product_category": "General",
+    "asset_type": "WF",
+    "creator": "E3",
+    "example": "AMP | Meta Lead Form Routing | General | WF | E3",
+    "notes": "Use AMP for dealer campaign assets.",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "nc4",
+    "initiative_type": "Promo",
+    "product_category": "TC",
+    "asset_type": "Form",
+    "creator": "E3",
+    "example": "Promo | YEP TC Incentive | TC | Form | E3",
+    "notes": "Use Promo for promotions and rebates — e.g. YEP (Year End Promotion), Gift of Adventure.",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "nc5",
+    "initiative_type": "ASC",
+    "product_category": "General",
+    "asset_type": "EM",
+    "creator": "Airstream",
+    "example": "ASC | Supply Co Newsletter | General | EM | Airstream",
+    "notes": "ASC = Airstream Supply Co. Separate naming track from CORP.",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  }
+]

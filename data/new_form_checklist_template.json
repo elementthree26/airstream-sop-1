@@ -1,0 +1,92 @@
+[
+  {
+    "id": "nf1",
+    "section": "HubSpot Form Setup",
+    "sort_order": 1,
+    "item_description": "Create form in HubSpot following naming convention: [Initiative] | [Description] | [Product Category] | Form | [Creator]",
+    "workflow_reference": null,
+    "danger_note": null,
+    "notes": "Clone an existing similar form when possible. Update name, hidden fields, and redirect URL."
+  },
+  {
+    "id": "nf2",
+    "section": "HubSpot Form Setup",
+    "sort_order": 2,
+    "item_description": "Configure hidden fields: Interested Product Model, Interested Product Category, and any campaign-specific fields",
+    "workflow_reference": null,
+    "danger_note": null,
+    "notes": "Hidden fields must be set with default values. Required for Aimbase webhook to receive correct data."
+  },
+  {
+    "id": "nf3",
+    "section": "HubSpot Form Setup",
+    "sort_order": 3,
+    "item_description": "Set form redirect URL to thank you page",
+    "workflow_reference": null,
+    "danger_note": null,
+    "notes": null
+  },
+  {
+    "id": "nf4",
+    "section": "WordPress",
+    "sort_order": 4,
+    "item_description": "Swap Form ID in WordPress page (get embed code from HubSpot, extract Form ID only — Portal ID stays constant)",
+    "workflow_reference": null,
+    "danger_note": null,
+    "notes": "Login at airstream.com/wp-admin (credentials in 1Password). Login often fails on first attempt — try 2-3 times. After editing, clear preview cache by appending ?=randomchars to URL."
+  },
+  {
+    "id": "nf5",
+    "section": "Workflow: Thank You Email",
+    "sort_order": 5,
+    "item_description": "Add new form as enrollment trigger in the Thank You Email workflow for this form type",
+    "workflow_reference": "Thank You Email Workflow",
+    "danger_note": null,
+    "notes": "Configure re-enrollment settings. Clone existing thank you email template when possible."
+  },
+  {
+    "id": "nf6",
+    "section": "Workflow: Lead Nurture Plinko",
+    "sort_order": 6,
+    "item_description": "Add new form to the correct stage branch in CORP | Lead Nurture Plinko | General | WF | E3",
+    "workflow_reference": "CORP | Lead Nurture Plinko | General | WF | E3",
+    "danger_note": "Do NOT add the same form to more than one stage branch. Each form can only appear in one stage.",
+    "notes": "Stage guide: Try & Buy = financing/dealer/incentive forms; Configure & Build = configurator forms; Experience Match = brochure/guide forms; Inspire = general/low-intent forms."
+  },
+  {
+    "id": "nf7",
+    "section": "Lead Scoring",
+    "sort_order": 7,
+    "item_description": "Add new form to the correct scoring group in HubSpot Lead Scoring (Marketing > Lead Scoring)",
+    "workflow_reference": null,
+    "danger_note": null,
+    "notes": "Assign point value based on intent level. Update the scoring change log with date and description."
+  },
+  {
+    "id": "nf8",
+    "section": "Workflow: Lead to Dealer",
+    "sort_order": 8,
+    "item_description": "Add new form to enrollment triggers in CORP | Send Leads to Aimbase | General | WF | E3",
+    "workflow_reference": "CORP | Send Leads to Aimbase | General | WF | E3",
+    "danger_note": "CRITICAL: Select the WHITE box (new contacts only). Never select the ORANGE box — it re-enrolls all ~1.7 million existing contacts and will crash the system.",
+    "notes": "This step is required for leads to reach dealers. Do not skip."
+  },
+  {
+    "id": "nf9",
+    "section": "Meta / Paid",
+    "sort_order": 9,
+    "item_description": "If form has a Meta lead ad equivalent, confirm Meta form name with Allison/Bennett and add to AMP | Meta Lead Form Routing | General | WF | E3",
+    "workflow_reference": "AMP | Meta Lead Form Routing | General | WF | E3",
+    "danger_note": null,
+    "notes": "Do not guess Meta form names — confirm exact names from Allison or Bennett before updating."
+  },
+  {
+    "id": "nf10",
+    "section": "Documentation",
+    "sort_order": 10,
+    "item_description": "Update lead scoring change log with date, form name, scoring group, and point value assigned",
+    "workflow_reference": null,
+    "danger_note": null,
+    "notes": null
+  }
+]

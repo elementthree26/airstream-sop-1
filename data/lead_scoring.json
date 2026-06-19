@@ -1,0 +1,86 @@
+[
+  {
+    "id": "ls1",
+    "scoring_group": "Dealer Contact (Hard Trigger)",
+    "action_description": "Factory tour form submitted, dealer contact form, financing form",
+    "points": 100,
+    "group_cap": 100,
+    "decay_rule": "No decay",
+    "velocity_rule": null,
+    "notes": "Highest intent group. Pushes contact directly to Lead Score 5 regardless of raw score threshold.",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "ls2",
+    "scoring_group": "High Intent",
+    "action_description": "Incentive/promotion form, financial calculator, dealer visit tracking",
+    "points": 70,
+    "group_cap": 70,
+    "decay_rule": "3 months: 80% decay",
+    "velocity_rule": null,
+    "notes": "Includes year-end promotion forms and TC incentive forms.",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "ls3",
+    "scoring_group": "Medium Intent",
+    "action_description": "Configurator actions, model comparison tools",
+    "points": 95,
+    "group_cap": 95,
+    "decay_rule": "6 months: 40-50% decay",
+    "velocity_rule": "3-4 configurator/brochure actions = +15pts; 5+ = +30pts",
+    "notes": "Velocity tracking applies — frequency of configurator use is scored separately.",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "ls4",
+    "scoring_group": "Moderate Intent",
+    "action_description": "Website form submissions — brochure downloads, guides",
+    "points": 95,
+    "group_cap": 95,
+    "decay_rule": "6 months: 40-50% decay",
+    "velocity_rule": "3-4 brochure downloads = +15pts; 5+ = +30pts",
+    "notes": "Organic brochure downloads are a critical signal — approximately 50% last-touch attribution. Velocity tracking applies.",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "ls5",
+    "scoring_group": "Low Intent",
+    "action_description": "Lifestyle guide downloads, newsletter signups, general page views",
+    "points": 50,
+    "group_cap": 50,
+    "decay_rule": "12 months: 20-30% decay",
+    "velocity_rule": null,
+    "notes": "Page views: 1pt each up to group cap.",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "ls6",
+    "scoring_group": "Re-engagement Boost",
+    "action_description": "Contact re-engages after 180+ days of inactivity",
+    "points": null,
+    "group_cap": null,
+    "decay_rule": "No decay",
+    "velocity_rule": null,
+    "notes": "Three priority tiers: Previous owner = +40pts; Previous high-stage prospect = +30pts; General re-engagement = +15pts. Triggered at 179-day conversion threshold.",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "ls7",
+    "scoring_group": "Previous Ownership Boost",
+    "action_description": "Contact is a verified previous Airstream owner",
+    "points": 20,
+    "group_cap": 20,
+    "decay_rule": "No decay",
+    "velocity_rule": null,
+    "notes": "Applied on top of other scoring. Stacks with re-engagement boost.",
+    "created_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2024-01-01T00:00:00Z"
+  }
+]

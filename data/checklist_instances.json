@@ -1,0 +1,19 @@
+[
+  {
+    "id": "ci1",
+    "checklist_type": "new_model",
+    "label": "Rangeline 21PL — June 2026",
+    "created_at": "2026-06-01T00:00:00Z",
+    "created_by": "rachel.young",
+    "items": [
+      { "checklist_item_id": "nm1", "completed": true, "completed_by": "rachel.young", "completed_at": "2026-06-01T10:00:00Z", "notes": null },
+      { "checklist_item_id": "nm2", "completed": true, "completed_by": "rachel.young", "completed_at": "2026-06-01T10:05:00Z", "notes": null },
+      { "checklist_item_id": "nm3", "completed": true, "completed_by": "rachel.young", "completed_at": "2026-06-02T09:00:00Z", "notes": null },
+      { "checklist_item_id": "nm4", "completed": true, "completed_by": "rachel.young", "completed_at": "2026-06-02T09:30:00Z", "notes": "Updated slug to rangeline-21pl. Also fixed 21PS slug from 'rangeline' to 'rangeline-21ps'." },
+      { "checklist_item_id": "nm5", "completed": true, "completed_by": "rachel.young", "completed_at": "2026-06-02T10:00:00Z", "notes": "Cloned steps from 21PS branch." },
+      { "checklist_item_id": "nm6", "completed": false, "completed_by": null, "completed_at": null, "notes": "Waiting on Allison to confirm Meta form names." },
+      { "checklist_item_id": "nm7", "completed": true, "completed_by": "rachel.young", "completed_at": "2026-06-03T09:00:00Z", "notes": null },
+      { "checklist_item_id": "nm8", "completed": false, "completed_by": null, "completed_at": null, "notes": null }
+    ]
+  }
+]

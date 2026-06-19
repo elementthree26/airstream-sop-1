@@ -1,0 +1,35 @@
+{
+  "last_completed_date": null,
+  "items": [
+    {
+      "id": "h1",
+      "sort_order": 1,
+      "item_description": "Review recently created assets for naming convention compliance",
+      "notes": "Hygiene check runs every 3 weeks via Slack workflow in #air2600-martech-fy26-support-general"
+    },
+    {
+      "id": "h2",
+      "sort_order": 2,
+      "item_description": "Confirm E3 team consistency — all E3-created assets end in | E3",
+      "notes": null
+    },
+    {
+      "id": "h3",
+      "sort_order": 3,
+      "item_description": "Update lead scoring change log if any scoring criteria were modified",
+      "notes": "Change log should include date, what changed, and who made the change"
+    },
+    {
+      "id": "h4",
+      "sort_order": 4,
+      "item_description": "Archive any deprecated assets (old workflows, inactive forms, unused lists)",
+      "notes": null
+    },
+    {
+      "id": "h5",
+      "sort_order": 5,
+      "item_description": "Notify team of any significant changes made to workflows or properties",
+      "notes": "Post in #air2600-martech-fy26-support-general"
+    }
+  ]
+}
