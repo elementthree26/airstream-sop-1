@@ -14,11 +14,13 @@ import {
   LogOut,
   User,
   Network,
+  Megaphone,
 } from "lucide-react";
 import clsx from "clsx";
 
 const NAV_ITEMS = [
   { href: "/workflow-map", label: "Workflow Map", icon: Network },
+  { href: "/meta-forms", label: "Live Meta Forms", icon: Megaphone },
   { href: "/workflows", label: "Workflows", icon: GitBranch },
   { href: "/forms", label: "Forms", icon: FileText },
   { href: "/lead-scoring", label: "Lead Scoring", icon: BarChart2 },

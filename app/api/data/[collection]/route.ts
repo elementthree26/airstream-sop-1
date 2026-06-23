@@ -12,6 +12,7 @@ const COLLECTION_TO_FILE: Record<string, string> = {
   new_model_checklist_template: "data/new_model_checklist_template.json",
   checklist_instances: "data/checklist_instances.json",
   hygiene_checklist: "data/hygiene_checklist.json",
+  meta_forms: "data/meta_forms.json",
 };
 
 export async function GET(
