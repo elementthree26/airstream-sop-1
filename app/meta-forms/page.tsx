@@ -167,65 +167,8 @@ export default function MetaFormsPage() {
               </div>
             ))}
 
-            {/* Google Apps Script instructions */}
-            <div className="mt-4 border border-gray-200 rounded-xl bg-gray-50 px-5 py-4 max-w-3xl">
-              <h3 className="text-xs font-bold text-gray-700 uppercase tracking-widest mb-2">Auto-sync setup</h3>
-              <p className="text-xs text-gray-600 mb-3 leading-relaxed">
-                This page auto-updates when someone edits the sheet. To enable it, add this Google Apps Script to the spreadsheet
-                (<span className="font-mono bg-white border border-gray-200 px-1 rounded">Extensions → Apps Script</span>):
-              </p>
-              <pre className="text-[10px] bg-white border border-gray-200 rounded-lg p-3 overflow-x-auto leading-relaxed text-gray-700">{`const WEBHOOK_URL = "https://airstream-sop-1.vercel.app/api/sync-meta-forms";
-const SECRET = "YOUR_SHEETS_SYNC_SECRET"; // match SHEETS_SYNC_SECRET in Vercel env vars
-
-function onEdit(e) {
-  const sheet = e.source.getSheetByName("Meta Lead Forms"); // update tab name if needed
-  if (!sheet || e.source.getActiveSheet().getName() !== sheet.getName()) return;
-  syncMetaForms();
-}
-
-function syncMetaForms() {
-  const sheet = SpreadsheetApp.getActiveSpreadsheet()
-    .getSheetByName("Meta Lead Forms"); // update tab name if needed
-  const rows = sheet.getDataRange().getValues();
-
-  // Find header row
-  const headerRow = rows.findIndex(r => r.includes("Lead Form Name"));
-  if (headerRow === -1) return;
-
-  const headers = rows[headerRow];
-  const col = (name) => headers.indexOf(name);
-
-  const forms = [];
-  for (let i = headerRow + 2; i < rows.length; i++) {
-    const r = rows[i];
-    if (r[col("Published?")] !== "Published") continue;
-    forms.push({
-      id: r[col("Product")].toString().toLowerCase().replace(/[^a-z0-9]/g, "_"),
-      product: r[col("Product")] || "",
-      form_name: r[col("Lead Form Name")] || "",
-      category: r[col("Lead Form Name")].includes("| TC |") ? "Touring Coach" : "Travel Trailer",
-      ipm: r[col("Product")] || "",
-      added_lead_label: r[col("Added to Lead Label?")] === "Yes" || r[col("Added to Lead Label?")] === true,
-      added_lead_score: r[col("Added to Lead Score?")] === "Yes" || r[col("Added to Lead Score?")] === true,
-      added_plinko: r[col("Added to Plinko?")] === "Yes" || r[col("Added to Plinko?")] === true,
-      added_dealer_distro: r[col("Added to META Dealer Distro?")] === "Yes" || r[col("Added to META Dealer Distro?")] === true,
-      added_aimbase: r[col("Has the form been added to the Aimbase workflow?")] === "Yes" || r[col("Has the form been added to the Aimbase workflow?")] === true,
-      date_added: r[col("Date forms have been added to workflows")] ? r[col("Date forms have been added to workflows")].toString() : "",
-      prop_wf_link: r[col("Property Writing Workflow Link")] || "",
-      dealer_routing_link: r[col("Dealer Routing Workflow Link")] || "",
-    });
-  }
-
-  const payload = JSON.stringify({ secret: SECRET, meta_forms: forms });
-  UrlFetchApp.fetch(WEBHOOK_URL, {
-    method: "post",
-    contentType: "application/json",
-    payload,
-  });
-}`}</pre>
-              <p className="text-xs text-gray-500 mt-2 leading-snug">
-                Also add <span className="font-mono bg-white border border-gray-200 px-1 rounded">SHEETS_SYNC_SECRET</span> as an environment variable in your Vercel project settings (any random string — just make both match).
-              </p>
+            <div className="mt-4 text-xs text-gray-400 italic">
+              This page syncs automatically from the AIR Corp Media Planner when the sheet is edited.
             </div>
           </>
         )}
