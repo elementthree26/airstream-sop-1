@@ -27,11 +27,10 @@ type MetaFormsData = {
 };
 
 const CHECKS: { key: keyof MetaForm; label: string }[] = [
-  { key: "added_lead_label",    label: "Lead Label WF" },
-  { key: "added_lead_score",    label: "Lead Score WF" },
-  { key: "added_plinko",        label: "Plinko WF" },
-  { key: "added_dealer_distro", label: "Dealer Distro WF" },
-  { key: "added_aimbase",       label: "Aimbase WF" },
+  { key: "added_lead_label",    label: "CORP | META Product Ad Labeling & TYE | General | WF | E3" },
+  { key: "added_lead_score",    label: "Lead Scoring Criteria" },
+  { key: "added_plinko",        label: "CORP | Lead Nurture Plinko | General | WF | E3" },
+  { key: "added_dealer_distro", label: "CORP | Dealer Distro META Lead Ad Submissions | General | WF | E3" },
 ];
 
 function Check({ val }: { val: boolean }) {
